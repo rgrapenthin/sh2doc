@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+       "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>sh2doc</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+<div id="Page">
+ <h1> sh2doc  </h1> <a href="../index.html">overview</a><br />
+
+ <p> Script for automatic documentation 
+
+ of shell scripts
+
+</p>
+
+ <p><a href="sh2doc">source</a></p>
+
+ <table border="1">
+ <tr>
+	<td valign="top">Author:</td>
+	<td> Ronni Grapenthin
+
+</td>
+ </tr>
+ <tr>
+	<td valign="top">Created:</td>
+	<td> 2007-11-20
+
+</td>
+ </tr>
+ <tr>
+	<td valign="top">Description:</td>
+	<td> This script runs though all directories specified in the field @DIRS and 
+
+ looks at all files whether they contain special documentation makers like:
+
+ <ul>
+
+ <li>BRIEF</li> 
+
+ <li>AUTHOR</li>
+
+ <li>DETAILS</li>
+
+ <li>DATE</li>
+
+ <li>CHANGELOG</li>
+
+ </ul>
+
+ If any of these are found, the file is added to an overview contained in an 
+
+ index.html file which lists file name (and a link to a detailed description).
+
+ Furthermore another HTML file is created which contains detailed information
+
+ of the file given in the documentation. Additional meta data of the file such as
+
+ last changed could be added.<br/>
+
+ A line that (starts with spaces only and) contains a comment starting with '+' 
+
+ will be added to the details. <p>Empty lines or "" denote that the subsection
+
+ (e.g. DETAILS) is finished. So use minimal HTML for paragraph formatting and line
+
+ breaks. </p>
+
+ fill @FILES with files found in directories given by @DIRS
+ grep all files that are executable and not a directory
+ sort filenames (depending on first letter of the file, not the full path!)
+ iterate over all files and check whether they contain tagged comments
+ read index file and include alphabet selection
+ final writing of index file  ... this is inefficient, optimize, if you can!
+</td>
+ </tr>
+ <tr>
+	<td valign="top">Changelog:</td>
+	<td> 2008-01-28 (rn): search for executables, includes non-tagged files / binaries in index.<br>
+
+ 2008-01-29 (rn): sorts filenames, gives separate tables for each letter<br>
+
+ 2009-10-12 (rn): added command line options<br>
+
+</td>
+ </tr>
+</table>
+</div>
+</body>
+</html>

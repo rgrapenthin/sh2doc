@@ -1,0 +1,52 @@
+  body{
+    color: black; background-color: white;
+    font-size: 100.01%;
+    font-family: Helvetica,Arial,sans-serif;
+    margin: 0; padding: 1em 0;
+    text-align: left;  /* Zentrierung im Internet Explorer */
+    background: #f9f9f9;
+  }
+  
+  p a{
+    color: black; background-color: white;
+    font-size: 100.01%;
+    font-family: Helvetica,Arial,sans-serif;
+    margin: 0; padding: 0 0;
+    text-align: left;  /* Zentrierung im Internet Explorer */
+  }
+  
+  div#Page {
+    text-align: left;    /* Seiteninhalt wieder links ausrichten */
+    margin: 0 auto;      /* standardkonforme horizontale Zentrierung */
+    width: 80%;
+    padding: 1em;
+    background: #fff;
+    border: 0;
+  }
+
+  h1 {
+    font-size: 1.25em;
+    color: #e8e8e8;
+    margin: 0; margin-bottom: 0.3em; padding: 0.3em;
+    text-align: left;
+    background: #fff;
+    background-width:100%;
+    border: 1px solid black;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    color: #aaa;
+    margin: 0; margin-bottom: 0.5em; padding: 0.3em;
+    text-align: left;
+    background: #fff;
+    background-width:100%;
+    border-top: 1px solid black;
+  }
+
+  li#active{
+    padding-left: 1em;
+    background-color: #efefef;
+  }
+
+  p { text-align:left; margin:1em; }   /* nur fuer den 'zurueck'-Link */
